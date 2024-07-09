@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
+import OtpInputWithValidation from "./components/OtpInputWithValidation";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
         <Routes>
             <Route path="/" element={<LoginPage/>} />
             <Route path="/signup" element={<SignupPage/>} />
+
+            {/* Testing */}
+            <Route path="/otp" element={<OtpInputWithValidation numberOfDigits={6}/>} />
+
         </Routes>
       </BrowserRouter>
     </div>
