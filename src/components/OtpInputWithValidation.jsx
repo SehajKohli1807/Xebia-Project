@@ -69,7 +69,7 @@ function OtpInputWithValidation({ numberOfDigits = 6 }) {
           Resend it
         </Link>
       </p>
-      <Link to={""} className="text-base text-black mt-3 underline">
+      <Link to={"/methods"} className="text-base text-black mt-3 underline">
         Try a different verification method
       </Link>
 

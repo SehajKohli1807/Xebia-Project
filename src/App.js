@@ -7,6 +7,7 @@ import {
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import OtpInputWithValidation from "./components/OtpInputWithValidation";
+import OtpMethods from './components/OtpMethods';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
 
             {/* Testing */}
             <Route path="/otp" element={<OtpInputWithValidation numberOfDigits={6}/>} />
+            <Route path="/methods" element={<OtpMethods/>} />
+
 
         </Routes>
       </BrowserRouter>
