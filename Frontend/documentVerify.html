@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Documents</title>
+    <link rel="stylesheet" href="./css/documentVerify.css">
+</head>
+<body>
+    <div class="background">
+            <div class="form-container">
+                <h2>Verify Documents</h2>
+                <div class="instructions">
+                    <p>Please read following instructions carefully for uploading documents- </p>
+                    <ul>
+                        <li><ul class="validdoclist">Valid Documents-
+                            <li>Adhaar Card</li>
+                            <li>PAN Card</li>
+                            <li>Driving License</li>
+                        </ul></li>
+                        <li>Document size should be less than 5MB.</li>
+                        <li>Document format supported are - png, jpeg and jpg.</li>
+                    </ul>
+                </div>
+                <form action="/documentverify" method="post" enctype="multipart/form-data">
+                    <div class="dropzone" id="dropzone" name="validDocumen">
+                        <p>Drag and Drop the file or click to Browse Files</p>
+                        <span class="or">OR</span>
+                        <div class="browse-btn">Browse Files</div>
+                        <!-- <input type="file" name="validDocument" hidden> -->
+                        <input type="file" name="validDocument">
+                    </div>
+                    <button class="upload-btn" type="submit">Upload</button>
+                </form>
+                
+            </div>
+    </div>
+
+    <script src="./js/documentVerify.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 45vw;
+    margin: 90px auto;
+    border: 2px solid maroon;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: rgb(230, 230, 230);
+}
+.form-container h2{
+    margin: 20px auto;
+    color: black;
+    text-align: center;
+}
+
+.upload-btn{
+    height: 40px;
+    width: 75px;
+    border: 2px solid maroon;
+    border-radius: 4px;
+    background-color: maroon;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin: 5px auto;
+    font-weight: 600;
+}
+
+.dropzone{
+    margin: 10px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    width: 40vw;
+    border: 2px dashed rgb(67, 67, 67);
+}
+.dropzone p{
+    color: rgb(74, 74, 74);
+    
+    padding: 2px;
+}
+.dropzone span{
+    margin: 10px auto;
+    color: rgb(74, 74, 74);
+}
+.browse-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px;
+    color: maroon;
+    text-align: center;
+}
+
+.validdoclist{
+    list-style: decimal;
+}
+
+.instructions ul{
+    padding: 2px;
+    margin: auto;
+}
+
+.active{
+    border: 2px solid white;
+}
+
+.dropzone img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
